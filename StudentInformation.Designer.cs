@@ -37,16 +37,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.signin = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.AddStudInfo = new System.Windows.Forms.Button();
+            this.UpdateStudInfo = new System.Windows.Forms.Button();
+            this.DeleteStudInfo = new System.Windows.Forms.Button();
+            this.SearchStudInfo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.UserNametextBox = new System.Windows.Forms.TextBox();
+            this.SearchStudTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
@@ -169,62 +169,62 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Student Information";
             // 
-            // signin
+            // AddStudInfo
             // 
-            this.signin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.signin.BackColor = System.Drawing.Color.LavenderBlush;
-            this.signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.signin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
-            this.signin.Location = new System.Drawing.Point(488, 133);
-            this.signin.Name = "signin";
-            this.signin.Size = new System.Drawing.Size(119, 32);
-            this.signin.TabIndex = 8;
-            this.signin.Text = "Add";
-            this.signin.UseVisualStyleBackColor = false;
+            this.AddStudInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AddStudInfo.BackColor = System.Drawing.Color.LavenderBlush;
+            this.AddStudInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddStudInfo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddStudInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
+            this.AddStudInfo.Location = new System.Drawing.Point(488, 133);
+            this.AddStudInfo.Name = "AddStudInfo";
+            this.AddStudInfo.Size = new System.Drawing.Size(119, 32);
+            this.AddStudInfo.TabIndex = 8;
+            this.AddStudInfo.Text = "Add";
+            this.AddStudInfo.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // UpdateStudInfo
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
-            this.button1.Location = new System.Drawing.Point(613, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 32);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = false;
+            this.UpdateStudInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.UpdateStudInfo.BackColor = System.Drawing.Color.LavenderBlush;
+            this.UpdateStudInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateStudInfo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateStudInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
+            this.UpdateStudInfo.Location = new System.Drawing.Point(613, 133);
+            this.UpdateStudInfo.Name = "UpdateStudInfo";
+            this.UpdateStudInfo.Size = new System.Drawing.Size(119, 32);
+            this.UpdateStudInfo.TabIndex = 9;
+            this.UpdateStudInfo.Text = "Update";
+            this.UpdateStudInfo.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // DeleteStudInfo
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
-            this.button2.Location = new System.Drawing.Point(738, 133);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 32);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.DeleteStudInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DeleteStudInfo.BackColor = System.Drawing.Color.LavenderBlush;
+            this.DeleteStudInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteStudInfo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteStudInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
+            this.DeleteStudInfo.Location = new System.Drawing.Point(738, 133);
+            this.DeleteStudInfo.Name = "DeleteStudInfo";
+            this.DeleteStudInfo.Size = new System.Drawing.Size(119, 32);
+            this.DeleteStudInfo.TabIndex = 10;
+            this.DeleteStudInfo.Text = "Delete";
+            this.DeleteStudInfo.UseVisualStyleBackColor = false;
+            this.DeleteStudInfo.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // SearchStudInfo
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
-            this.button3.Location = new System.Drawing.Point(1133, 133);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 32);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Search";
-            this.button3.UseVisualStyleBackColor = false;
+            this.SearchStudInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SearchStudInfo.BackColor = System.Drawing.Color.LavenderBlush;
+            this.SearchStudInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchStudInfo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchStudInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
+            this.SearchStudInfo.Location = new System.Drawing.Point(1133, 133);
+            this.SearchStudInfo.Name = "SearchStudInfo";
+            this.SearchStudInfo.Size = new System.Drawing.Size(119, 32);
+            this.SearchStudInfo.TabIndex = 11;
+            this.SearchStudInfo.Text = "Search";
+            this.SearchStudInfo.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -269,16 +269,16 @@
             this.panel6.Size = new System.Drawing.Size(200, 38);
             this.panel6.TabIndex = 15;
             // 
-            // UserNametextBox
+            // SearchStudTextBox
             // 
-            this.UserNametextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.UserNametextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNametextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
-            this.UserNametextBox.Location = new System.Drawing.Point(863, 134);
-            this.UserNametextBox.Multiline = true;
-            this.UserNametextBox.Name = "UserNametextBox";
-            this.UserNametextBox.Size = new System.Drawing.Size(264, 31);
-            this.UserNametextBox.TabIndex = 12;
+            this.SearchStudTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SearchStudTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchStudTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
+            this.SearchStudTextBox.Location = new System.Drawing.Point(863, 134);
+            this.SearchStudTextBox.Multiline = true;
+            this.SearchStudTextBox.Name = "SearchStudTextBox";
+            this.SearchStudTextBox.Size = new System.Drawing.Size(264, 31);
+            this.SearchStudTextBox.TabIndex = 12;
             // 
             // pictureBox2
             // 
@@ -307,12 +307,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.UserNametextBox);
+            this.Controls.Add(this.SearchStudTextBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.signin);
+            this.Controls.Add(this.SearchStudInfo);
+            this.Controls.Add(this.DeleteStudInfo);
+            this.Controls.Add(this.UpdateStudInfo);
+            this.Controls.Add(this.AddStudInfo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
@@ -343,16 +343,16 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button signin;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button AddStudInfo;
+        private System.Windows.Forms.Button UpdateStudInfo;
+        private System.Windows.Forms.Button DeleteStudInfo;
+        private System.Windows.Forms.Button SearchStudInfo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox UserNametextBox;
+        private System.Windows.Forms.TextBox SearchStudTextBox;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
