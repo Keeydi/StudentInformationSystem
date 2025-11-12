@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace StudentInformationSystem
 {
-    public partial class StudInfoPage : Form
+    public partial class EditProfile : Form
     {
-        public StudInfoPage()
+        public EditProfile()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

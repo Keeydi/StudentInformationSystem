@@ -36,7 +36,6 @@
             this.UserNametextBox = new System.Windows.Forms.TextBox();
             this.signin = new System.Windows.Forms.Button();
             this.CreateAccount = new System.Windows.Forms.Label();
-            this.ForgotPass = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -144,20 +143,6 @@
             this.CreateAccount.Text = "Don\'t have an account?";
             this.CreateAccount.Click += new System.EventHandler(this.CreateAccount_Click);
             // 
-            // ForgotPass
-            // 
-            this.ForgotPass.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ForgotPass.AutoSize = true;
-            this.ForgotPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ForgotPass.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForgotPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
-            this.ForgotPass.Location = new System.Drawing.Point(453, 323);
-            this.ForgotPass.Name = "ForgotPass";
-            this.ForgotPass.Size = new System.Drawing.Size(120, 16);
-            this.ForgotPass.TabIndex = 6;
-            this.ForgotPass.Text = "Forgot password?";
-            this.ForgotPass.Click += new System.EventHandler(this.ForgotPass_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::StudentInformationSystem.Properties.Resources._1199277_200;
@@ -187,7 +172,6 @@
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ForgotPass);
             this.Controls.Add(this.CreateAccount);
             this.Controls.Add(this.signin);
             this.Controls.Add(this.label3);
@@ -218,7 +202,6 @@
         private System.Windows.Forms.TextBox UserNametextBox;
         private System.Windows.Forms.Button signin;
         private System.Windows.Forms.Label CreateAccount;
-        private System.Windows.Forms.Label ForgotPass;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
     }

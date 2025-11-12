@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.StudinfoSystem = new System.Windows.Forms.Label();
             this.Announcements = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Attendance = new System.Windows.Forms.Button();
@@ -53,7 +53,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Lavender;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.StudinfoSystem);
             this.panel1.Controls.Add(this.Announcements);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.Attendance);
@@ -64,16 +64,16 @@
             this.panel1.Size = new System.Drawing.Size(1264, 61);
             this.panel1.TabIndex = 2;
             // 
-            // label1
+            // StudinfoSystem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
-            this.label1.Location = new System.Drawing.Point(12, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Student Information System";
+            this.StudinfoSystem.AutoSize = true;
+            this.StudinfoSystem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudinfoSystem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
+            this.StudinfoSystem.Location = new System.Drawing.Point(12, 21);
+            this.StudinfoSystem.Name = "StudinfoSystem";
+            this.StudinfoSystem.Size = new System.Drawing.Size(221, 19);
+            this.StudinfoSystem.TabIndex = 3;
+            this.StudinfoSystem.Text = "Student Information System";
             // 
             // Announcements
             // 
@@ -148,18 +148,18 @@
             this.toolStripMenuItem1,
             this.editProfileToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(132, 48);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
             this.toolStripMenuItem1.Text = "Logout";
             // 
             // editProfileToolStripMenuItem
             // 
             this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.editProfileToolStripMenuItem.Text = "Edit Profile";
             // 
             // panel2
@@ -228,7 +228,7 @@
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label StudinfoSystem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;

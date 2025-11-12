@@ -73,6 +73,16 @@ namespace StudentInformationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_Nov_10__2025__02_44_36_PM {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT Image Nov 10, 2025, 02_44_36 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_user_icon_3296_thumb {
             get {
                 object obj = ResourceManager.GetObject("free-user-icon-3296-thumb", resourceCulture);

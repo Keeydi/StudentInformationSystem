@@ -31,30 +31,28 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.AdminAccounts = new System.Windows.Forms.Button();
+            this.Accounts = new System.Windows.Forms.Button();
             this.MainPage = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Lavender;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.AdminAccounts);
+            this.panel1.Controls.Add(this.Accounts);
             this.panel1.Controls.Add(this.MainPage);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -73,33 +71,19 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Student Information System";
             // 
-            // button1
+            // Accounts
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
-            this.button1.Location = new System.Drawing.Point(613, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 35);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Teacher Accounts";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // AdminAccounts
-            // 
-            this.AdminAccounts.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AdminAccounts.BackColor = System.Drawing.Color.LavenderBlush;
-            this.AdminAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AdminAccounts.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminAccounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
-            this.AdminAccounts.Location = new System.Drawing.Point(813, 14);
-            this.AdminAccounts.Name = "AdminAccounts";
-            this.AdminAccounts.Size = new System.Drawing.Size(194, 35);
-            this.AdminAccounts.TabIndex = 7;
-            this.AdminAccounts.Text = "Admin Accounts";
-            this.AdminAccounts.UseVisualStyleBackColor = false;
+            this.Accounts.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Accounts.BackColor = System.Drawing.Color.LavenderBlush;
+            this.Accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Accounts.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Accounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
+            this.Accounts.Location = new System.Drawing.Point(813, 14);
+            this.Accounts.Name = "Accounts";
+            this.Accounts.Size = new System.Drawing.Size(194, 35);
+            this.Accounts.TabIndex = 6;
+            this.Accounts.Text = "Accounts";
+            this.Accounts.UseVisualStyleBackColor = false;
             // 
             // MainPage
             // 
@@ -159,6 +143,26 @@
             this.panel3.Size = new System.Drawing.Size(200, 38);
             this.panel3.TabIndex = 12;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.editProfileToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(132, 48);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
+            this.toolStripMenuItem1.Text = "Logout";
+            // 
+            // editProfileToolStripMenuItem
+            // 
+            this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.editProfileToolStripMenuItem.Text = "Edit Profile";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::StudentInformationSystem.Properties.Resources.free_user_icon_3296_thumb;
@@ -169,26 +173,6 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.editProfileToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem1.Text = "Logout";
-            // 
-            // editProfileToolStripMenuItem
-            // 
-            this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.editProfileToolStripMenuItem.Text = "Edit Profile";
             // 
             // AdminLandingPage
             // 
@@ -204,8 +188,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -216,8 +200,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button MainPage;
-        private System.Windows.Forms.Button AdminAccounts;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Accounts;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;

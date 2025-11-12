@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.StudinfoSystem = new System.Windows.Forms.Label();
             this.Announcements = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Attendance = new System.Windows.Forms.Button();
             this.StudInfo = new System.Windows.Forms.Button();
             this.Grades = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -50,6 +50,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.markAttendance = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -61,7 +62,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Lavender;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.StudinfoSystem);
             this.panel1.Controls.Add(this.Announcements);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.Attendance);
@@ -72,16 +73,16 @@
             this.panel1.Size = new System.Drawing.Size(1264, 61);
             this.panel1.TabIndex = 8;
             // 
-            // label1
+            // StudinfoSystem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
-            this.label1.Location = new System.Drawing.Point(12, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Student Information System";
+            this.StudinfoSystem.AutoSize = true;
+            this.StudinfoSystem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudinfoSystem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
+            this.StudinfoSystem.Location = new System.Drawing.Point(12, 21);
+            this.StudinfoSystem.Name = "StudinfoSystem";
+            this.StudinfoSystem.Size = new System.Drawing.Size(221, 19);
+            this.StudinfoSystem.TabIndex = 3;
+            this.StudinfoSystem.Text = "Student Information System";
             // 
             // Announcements
             // 
@@ -96,6 +97,16 @@
             this.Announcements.TabIndex = 8;
             this.Announcements.Text = "Announcements";
             this.Announcements.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::StudentInformationSystem.Properties.Resources.free_user_icon_3296_thumb;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(1213, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 37);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // Attendance
             // 
@@ -138,16 +149,6 @@
             this.Grades.TabIndex = 6;
             this.Grades.Text = "Grades";
             this.Grades.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::StudentInformationSystem.Properties.Resources.free_user_icon_3296_thumb;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(1213, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 37);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -252,7 +253,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(593, 139);
+            this.dateTimePicker1.Location = new System.Drawing.Point(212, 139);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(264, 26);
             this.dateTimePicker1.TabIndex = 19;
@@ -263,19 +264,33 @@
             this.toolStripMenuItem1,
             this.editProfileToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(132, 48);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
             this.toolStripMenuItem1.Text = "Logout";
             // 
             // editProfileToolStripMenuItem
             // 
             this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.editProfileToolStripMenuItem.Text = "Edit Profile";
+            // 
+            // markAttendance
+            // 
+            this.markAttendance.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.markAttendance.BackColor = System.Drawing.Color.LavenderBlush;
+            this.markAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.markAttendance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.markAttendance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(44)))), ((int)(((byte)(42)))));
+            this.markAttendance.Location = new System.Drawing.Point(685, 134);
+            this.markAttendance.Name = "markAttendance";
+            this.markAttendance.Size = new System.Drawing.Size(172, 32);
+            this.markAttendance.TabIndex = 20;
+            this.markAttendance.Text = "Mark Attendance";
+            this.markAttendance.UseVisualStyleBackColor = false;
             // 
             // AttendancePage
             // 
@@ -283,6 +298,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.markAttendance);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.SearchAttendance);
@@ -308,7 +324,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label StudinfoSystem;
         private System.Windows.Forms.Button Announcements;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Attendance;
@@ -328,5 +344,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;
+        private System.Windows.Forms.Button markAttendance;
     }
 }
