@@ -70,6 +70,12 @@
     <Compile Include="AttendancePage.Designer.cs">
       <DependentUpon>AttendancePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteStudentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteStudentInformation.Designer.cs">
+      <DependentUpon>DeleteStudentInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,12 @@
     <Compile Include="AdminLandingPage.Designer.cs">
       <DependentUpon>AdminLandingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="MarkAttendancePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkAttendancePage.Designer.cs">
+      <DependentUpon>MarkAttendancePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AttendancePage.resx">
       <DependentUpon>AttendancePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteStudentInformation.resx">
+      <DependentUpon>DeleteStudentInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditProfile.resx">
       <DependentUpon>EditProfile.cs</DependentUpon>
@@ -152,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminLandingPage.resx">
       <DependentUpon>AdminLandingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarkAttendancePage.resx">
+      <DependentUpon>MarkAttendancePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentInformation.resx">
       <DependentUpon>StudentInformation.cs</DependentUpon>
