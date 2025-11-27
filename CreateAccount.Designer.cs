@@ -164,7 +164,7 @@
             this.SignInCreate.Name = "SignInCreate";
             this.SignInCreate.Size = new System.Drawing.Size(363, 35);
             this.SignInCreate.TabIndex = 9;
-            this.SignInCreate.Text = "Sign In";
+            this.SignInCreate.Text = "Sign Up";
             this.SignInCreate.UseVisualStyleBackColor = false;
             this.SignInCreate.Click += new System.EventHandler(this.SignInCreate_Click);
             // 
@@ -226,7 +226,6 @@
             this.FirstNCreateAcc.Name = "FirstNCreateAcc";
             this.FirstNCreateAcc.Size = new System.Drawing.Size(362, 26);
             this.FirstNCreateAcc.TabIndex = 15;
-            this.FirstNCreateAcc.UseSystemPasswordChar = true;
             // 
             // LastNCreateAcc
             // 
@@ -237,7 +236,6 @@
             this.LastNCreateAcc.Name = "LastNCreateAcc";
             this.LastNCreateAcc.Size = new System.Drawing.Size(362, 26);
             this.LastNCreateAcc.TabIndex = 16;
-            this.LastNCreateAcc.UseSystemPasswordChar = true;
             // 
             // MiddleNCreateAcc
             // 
@@ -248,7 +246,6 @@
             this.MiddleNCreateAcc.Name = "MiddleNCreateAcc";
             this.MiddleNCreateAcc.Size = new System.Drawing.Size(363, 26);
             this.MiddleNCreateAcc.TabIndex = 17;
-            this.MiddleNCreateAcc.UseSystemPasswordChar = true;
             // 
             // label6
             // 

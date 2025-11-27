@@ -40,7 +40,7 @@
             this.StudInfo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.StudinfoSystem = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Pic = new System.Windows.Forms.PictureBox();
             this.dataStudInfo = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.AddStudInfo = new System.Windows.Forms.Button();
@@ -48,15 +48,15 @@
             this.SearchStudInfo = new System.Windows.Forms.Button();
             this.SearchStudTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ProfileMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataStudInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
+            this.ProfileMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -165,7 +165,7 @@
             this.panel1.BackColor = System.Drawing.Color.Lavender;
             this.panel1.Controls.Add(this.StudinfoSystem);
             this.panel1.Controls.Add(this.Announcements);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.Pic);
             this.panel1.Controls.Add(this.Attendance);
             this.panel1.Controls.Add(this.StudInfo);
             this.panel1.Controls.Add(this.Grades);
@@ -185,15 +185,16 @@
             this.StudinfoSystem.TabIndex = 3;
             this.StudinfoSystem.Text = "Student Information System";
             // 
-            // pictureBox1
+            // Pic
             // 
-            this.pictureBox1.BackgroundImage = global::StudentInformationSystem.Properties.Resources.free_user_icon_3296_thumb;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(1213, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 37);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.Pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Pic.Location = new System.Drawing.Point(1213, 12);
+            this.Pic.Name = "Pic";
+            this.Pic.Size = new System.Drawing.Size(39, 37);
+            this.Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Pic.TabIndex = 4;
+            this.Pic.TabStop = false;
+            this.Pic.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // dataStudInfo
             // 
@@ -286,27 +287,29 @@
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
-            // contextMenuStrip1
+            // ProfileMenu
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ProfileMenu.DropShadowEnabled = false;
+            this.ProfileMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.editProfileToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(132, 48);
+            this.ProfileMenu.Name = "contextMenuStrip1";
+            this.ProfileMenu.Size = new System.Drawing.Size(137, 48);
+            this.ProfileMenu.Opening += new System.ComponentModel.CancelEventHandler(this.ProfileMenu_Opening);
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Enabled = false;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
-            this.toolStripMenuItem1.Text = "Logout";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
+            this.toolStripMenuItem1.Text = "View Profile";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // editProfileToolStripMenuItem
             // 
-            this.editProfileToolStripMenuItem.Enabled = false;
             this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.editProfileToolStripMenuItem.Text = "Edit Profile";
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.editProfileToolStripMenuItem.Text = "Logout";
+            this.editProfileToolStripMenuItem.Click += new System.EventHandler(this.editProfileToolStripMenuItem_Click);
             // 
             // StudInfoPage
             // 
@@ -330,10 +333,10 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataStudInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
+            this.ProfileMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,7 +351,7 @@
         private System.Windows.Forms.Button StudInfo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label StudinfoSystem;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Pic;
         private System.Windows.Forms.DataGridView dataStudInfo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button AddStudInfo;
@@ -360,7 +363,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox SearchStudTextBox;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ContextMenuStrip ProfileMenu;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;
     }
